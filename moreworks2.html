@@ -4,104 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Wong 摄影作品集</title>
-    <link rel="stylesheet" href="more_works.css">
+    <link rel="stylesheet" href="more_works_refined.css">
 </head>
 <body>
 
     <h2 class="blankspace">PORTFOLIO (PHOTOGRAPH)</h2>
     <p class="blankspace">
-        Integer at pharetra metus, non porttitor lorem. 
-        Pellentesque consectetur lacus at erat maximus fringilla. 
-        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. 
-        Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. 
-        Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. 
-        Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. 
-        Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat. 
-        In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. 
-        Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. 
-        Vestibulum eget eros nec eros maximus cursus.Integer at pharetra metus, non porttitor lorem. 
-        Pellentesque consectetur lacus at erat maximus fringilla.Integer at pharetra metus, non porttitor lorem.
+        Integer at pharetra metus, non porttitor lorem.
+        Pellentesque consectetur lacus at erat maximus fringilla.
+        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti.
+        Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna.
+        Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis.
+        Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida.
+        Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat.
+        In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non.
+        Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim.
+        Vestibulum eget eros nec eros maximus cursus. Integer at pharetra metus, non porttitor lorem.
+        Pellentesque consectetur lacus at erat maximus fringilla. Integer at pharetra metus, non porttitor lorem.
     </p>
 
-    <!-- 摄影作品集 - 2:3比例网格 -->
     <div class="portfolio-grid">
         <div class="portfolio-item" onclick="openModal(0)">
             <img src="images/001.JPG" alt="摄影作品1">
             <div class="portfolio-caption">作品 #1</div>
         </div>
         <div class="portfolio-item" onclick="openModal(1)">
-            <img src="images/002.JPG" alt="摄影作品2">  <!-- 改成002 -->
+            <img src="images/002.JPG" alt="摄影作品2">
             <div class="portfolio-caption">作品 #2</div>
         </div>
         <div class="portfolio-item" onclick="openModal(2)">
-            <img src="images/003.JPG" alt="摄影作品3">  <!-- 改成003 -->
+            <img src="images/003.JPG" alt="摄影作品3">
             <div class="portfolio-caption">作品 #3</div>
         </div>
         <div class="portfolio-item" onclick="openModal(3)">
-            <img src="images/004.JPG" alt="摄影作品4">  <!-- 改成004 -->
+            <img src="images/004.JPG" alt="摄影作品4">
             <div class="portfolio-caption">作品 #4</div>
         </div>
         <div class="portfolio-item" onclick="openModal(4)">
-            <img src="images/005.JPG" alt="摄影作品5">  <!-- 改成005 -->
+            <img src="images/005.jpg" alt="摄影作品5">
             <div class="portfolio-caption">作品 #5</div>
         </div>
         <div class="portfolio-item" onclick="openModal(5)">
-            <img src="images/006.JPG" alt="摄影作品6">  <!-- 改成006 -->
+            <img src="images/006.jpg" alt="摄影作品6">
             <div class="portfolio-caption">作品 #6</div>
         </div>
         <div class="portfolio-item" onclick="openModal(6)">
-            <img src="images/007.JPG" alt="摄影作品7">  <!-- 改成007 -->
+            <img src="images/007.jpg" alt="摄影作品7">
             <div class="portfolio-caption">作品 #7</div>
         </div>
         <div class="portfolio-item" onclick="openModal(7)">
-            <img src="images/008.JPG" alt="摄影作品8">  <!-- 改成008 -->
+            <img src="images/008.JPG" alt="摄影作品8">
             <div class="portfolio-caption">作品 #8</div>
         </div>
         <div class="portfolio-item" onclick="openModal(8)">
-            <img src="images/009.JPG" alt="摄影作品9">  <!-- 改成009 -->
+            <img src="images/009.jpg" alt="摄影作品9">
             <div class="portfolio-caption">作品 #9</div>
         </div>
         <div class="portfolio-item" onclick="openModal(9)">
-            <img src="images/010.JPG" alt="摄影作品10">  <!-- 改成010 -->
+            <img src="images/010.jpg" alt="摄影作品10">
             <div class="portfolio-caption">作品 #10</div>
         </div>
         <div class="portfolio-item" onclick="openModal(10)">
-            <img src="images/011.JPG" alt="摄影作品11">  <!-- 改成011 -->
+            <img src="images/011.jpg" alt="摄影作品11">
             <div class="portfolio-caption">作品 #11</div>
         </div>
         <div class="portfolio-item" onclick="openModal(11)">
-            <img src="images/012.JPG" alt="摄影作品12">  <!-- 改成012 -->
+            <img src="images/012.jpg" alt="摄影作品12">
             <div class="portfolio-caption">作品 #12</div>
         </div>
-        <!-- 继续添加更多不同的图片... -->
     </div>
 
-    <!-- 模态框 -->
     <div id="imageModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
-        <button class="modal-nav modal-prev" onclick="changeImage(-1)">❮</button>
-        <button class="modal-nav modal-next" onclick="changeImage(1)">❯</button>
+        <button class="modal-nav modal-prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="modal-nav modal-next" onclick="changeImage(1)">&#10095;</button>
         <div class="modal-content">
             <img id="modalImage" src="" alt="摄影作品预览">
         </div>
-        <div class="image-counter" id="imageCounter">1/12</div>  <!-- 根据实际数量修改 -->
+        <div class="image-counter" id="imageCounter">1/12</div>
     </div>
 
     <script>
-        // ✅ 修正1：图片数组要包含正确的路径
         const portfolioImages = [
-            'images/001.JPG',  // 要和网格中的图片对应
-            'images/002.JPG',
-            'images/003.JPG',
-            'images/004.JPG',
-            'images/005.JPG',
-            'images/006.JPG',
-            'images/007.JPG',
-            'images/008.JPG',
-            'images/009.JPG',
-            'images/010.JPG',
-            'images/011.JPG',
-            'images/012.JPG'
+            "images/001.JPG",
+            "images/002.JPG",
+            "images/003.JPG",
+            "images/004.JPG",
+            "images/005.jpg",
+            "images/006.jpg",
+            "images/007.jpg",
+            "images/008.JPG",
+            "images/009.jpg",
+            "images/010.jpg",
+            "images/011.jpg",
+            "images/012.jpg"
         ];
 
         let currentIndex = 0;
@@ -109,13 +105,13 @@
         function openModal(index) {
             currentIndex = index;
             updateModalImage();
-            document.getElementById('imageModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            document.getElementById("imageModal").style.display = "block";
+            document.body.style.overflow = "hidden";
         }
 
         function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
+            document.getElementById("imageModal").style.display = "none";
+            document.body.style.overflow = "auto";
         }
 
         function changeImage(direction) {
@@ -124,25 +120,23 @@
         }
 
         function updateModalImage() {
-            document.getElementById('modalImage').src = portfolioImages[currentIndex];
-            document.getElementById('imageCounter').textContent = `${currentIndex + 1}/${portfolioImages.length}`;
+            document.getElementById("modalImage").src = portfolioImages[currentIndex];
+            document.getElementById("imageCounter").textContent = `${currentIndex + 1}/${portfolioImages.length}`;
         }
 
-        // 键盘控制
-        document.addEventListener('keydown', function(e) {
-            let modal = document.getElementById('imageModal');
-            if (modal.style.display === 'block') {
-                if (e.key === 'ArrowLeft') changeImage(-1);
-                if (e.key === 'ArrowRight') changeImage(1);
-                if (e.key === 'Escape') closeModal();
+        document.addEventListener("keydown", function(e) {
+            const modal = document.getElementById("imageModal");
+            if (modal.style.display === "block") {
+                if (e.key === "ArrowLeft") changeImage(-1);
+                if (e.key === "ArrowRight") changeImage(1);
+                if (e.key === "Escape") closeModal();
             }
         });
 
-        // 点击背景关闭
         window.onclick = function(event) {
-            let modal = document.getElementById('imageModal');
-            if (event.target == modal) closeModal();
-        }
+            const modal = document.getElementById("imageModal");
+            if (event.target === modal) closeModal();
+        };
     </script>
 
     <p class="blankspace copyright">© 2025 James Wong. All rights reserved.</p>
