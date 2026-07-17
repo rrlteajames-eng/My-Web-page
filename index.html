@@ -1,349 +1,558 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        HUANG Rui | Portfolio
-    </title>
-    <link rel="stylesheet" href="style_in_my_webpage_responsive.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A two-minute digital self-introduction by James.">
+  <title>The Names I Have Been Given — James</title>
+  <link rel="stylesheet" href="style_in_my_webpage_responsive.css">
 </head>
-
 <body>
- <h1 align="center">HUANG Rui</h1>
+  <a class="skip-link" href="#intro">Skip to the introduction</a>
 
-    <div class="divider"></div>
-
-    <div class="nav-menu">
-     <a href="#whats-new">What's New</a>
-     <a href="#portfolio">Portfolio</a>
-    <a href="https://www.linkedin.com/in/rui-h-718526398" target="_blank">About Me</a>
+  <header class="presentation-controls" aria-label="Presentation controls">
+    <div class="chapter-counter" aria-live="polite">
+      <span id="currentChapter">01</span>
+      <span class="counter-divider">/</span>
+      <span>07</span>
     </div>
-<!-- 导航栏 -->
+    <button class="auto-story-button" id="autoStoryButton" type="button" aria-label="Start the 1 minute 45 second automatic presentation" aria-pressed="false" title="Start automatic presentation">
+      <span class="auto-story-symbol" id="autoStorySymbol" aria-hidden="true">▶</span>
+      <span class="auto-story-label" id="autoStoryLabel">Auto 1:45</span>
+    </button>
+    <button class="sound-button" id="soundButton" type="button" aria-label="Play soundtrack: BAANDIT! — Miss" aria-pressed="false" title="Play BAANDIT! — Miss (M)">
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="sound-label" id="soundLabel">Soundtrack</span>
+    </button>
+    <button class="icon-button" id="fullscreenButton" type="button" aria-label="Enter full screen" aria-pressed="false">
+      <span aria-hidden="true">⛶</span>
+    </button>
+  </header>
 
-<img src="images/IMG_4508.JPG" class="full-width-img" alt="my photo">
-<!-- 大照片 -->
-<br>
-                    <p class="blankspace">by HUANG Rui - February 20,2026</p>
+  <nav class="chapter-nav" aria-label="Presentation chapters">
+    <button class="chapter-dot is-current" type="button" data-target="intro" aria-label="Go to chapter 1: Hello" aria-current="step"></button>
+    <button class="chapter-dot" type="button" data-target="labels" aria-label="Go to chapter 2: Labels"></button>
+    <button class="chapter-dot" type="button" data-target="names" aria-label="Go to chapter 3: My names"></button>
+    <button class="chapter-dot" type="button" data-target="begin-again" aria-label="Go to chapter 4: Begin again"></button>
+    <button class="chapter-dot" type="button" data-target="new-language" aria-label="Go to chapter 5: A new language"></button>
+    <button class="chapter-dot" type="button" data-target="keep-moving" aria-label="Go to chapter 6: Keep moving"></button>
+    <button class="chapter-dot" type="button" data-target="from-now" aria-label="Go to chapter 7: From now"></button>
+    <button class="chapter-dot chapter-dot--epilogue" type="button" data-target="works" aria-label="Go to the optional works epilogue"></button>
+  </nav>
 
-    <h2 id="whats-new" class="blankspace">WHAT'S NEW--Explore new places every single day</h2>
-                    <p class="blankspace">
-                        In 2020, my favorite blogger posted a video documenting the process of making his dream come true. 
-                        In the comments, people shared their ambitions and encouraged one another. I felt the media’s power. 
-                        Since then, my budding interests in story-telling and communication blossomed. My first attempt in this field was as an Honor’s photographer. 
-                        I never felt more accomplished than when I created a video that matched my aesthetics and ideals. 
-                        I was more committed to persuing in this profession.
-                    </p>
-    
-<br>
-<br>
-<div class="page">
-  <div class="content">
-    <h3>Find Rest for Your Soul</h3>
+  <audio id="backgroundMusic" src="background-music.mp3" preload="metadata" loop></audio>
 
-    <img src="images/DSCF0714 2.JPG" class="post-image" alt="post image">
-
-                    <p>
-                        In 2021, busy schoolwork prevented me from pursuing my interest. I decided to take a year off from school. 
-                        This year, I took the online Appreciation of Chinese and Foreign Classic Cases of News Photography course, and learned about the categories of photography. 
-                        Han Li’s lecture made me more innovative in my design. 
-                        In the 48-hour FilMarathon competition, I was involved in every step of the short film creation process, 
-                        acquiring expert audio-visual skills and learning how to express my views through my work. 
-                        During my time as a photographer for promotional videos at two Hainan surf clubs, 
-                        I found that my desired content was often not what clients needed. 
-                        To complete tasks, I had to abandon some ideas. 
-                        That got me thinking: Are the customers’ needs and the creators’ concepts contradictory? My friend and I founded Zizai Studio providing publicity and videography services in 2022. 
-                        In creating the Live-in-SIDUHE Channel for Siduhe Village’s development project, videos lasted around 5 minutes initially. 
-                        Regretfully, the view counts were not rosy. We found viewers are now more likely to be attracted by short videos and low-quality dramas. 
-                        Nonetheless, I believe that disseminators must preserve the works’ artistic integrity and distinctiveness rather than catering to the public blindly. 
-                        Maybe I can strike a balance between serving my clients’ requirements and keeping my work’s originality.
-                    </p>
-  </div>
-
-  <aside class="sidebar" >
-        <h3>Recent Posts</h3>
-         <h6>In our carbon lives</h6>
-         <p>January 19, 2026</p>
-
-                <div class="recent-post">
-                    <p>We decided to take short videos with specific cinematic and editing techniques for better quality and greater artistic value. 
-                        The Channel had hundreds of thousands of views overall. In a guesthouse promotion program, 
-                        the customer requested the initial ten seconds quickly grabbed people’s attention. 
-                        We thought the video should highlight its beauty and encourage viewers to take it slowly. 
-                        Finally, two promotions were created: one met their requirements and the other had a laid-back, 
-                        idyllic tone, while representative images were included at the beginning to draw viewers’ attention. After presentation, our idea was approved.
-                    </p>
-                </div>
-        <h6>Travel where you want.</h6>
-                    <p>January 5, 2026</p>
-                <div class="recent-post">
-                    <p>Integer at pharetra metus, non porttitor lorem. 
-                        Pellentesque consectetur lacus at erat maximus fringilla. 
-                        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. 
-                        Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. 
-                        Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. 
-                        Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. 
-                        Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat. 
-                        In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non.
-                        Phasellus aliquam sodales tellus, sit amet aliquet nisi elementum non. 
-                        Nam in vulputate sem, in facilisis erat. Fusce auctor risus vel euismod rhoncus.
-                        Quisque velit urna, blandit eu rhoncus ut, efficitur sit amet justo. 
-                        Suspendisse lobortis erat nec massa egestas venenatis nec eu ligula.
-                        Nam in vulputate sem, in facilisis erat. Fusce auctor risus vel euismod rhoncus. 
-                    </p>
-                </div>
-        
-  </aside>
-
-</div><!-- 分栏结束 -->
-
-<div class="page">
-  <div class="content">
-    <h3>Find Rest for Your Soul</h3>
-
-    <img src="images/DSCF5763 2.JPG" class="post-image" alt="post image">
-
-                    <p>
-                        Integer at pharetra metus, non porttitor lorem. Pellentesque consectetur lacus at erat maximus fringilla. 
-                        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. Vestibulum cursus lobortis suscipit. 
-                        Pellentesque vel eleifend urna. Nunc rutrum arcu justo, et condimentum felis efficitur ac. 
-                        Praesent id erat ac felis dignissim commodo. Proin vehicula libero eu suscipit sodales. 
-                        Vestibulum imperdiet nibh ut ligula semper posuere. 
-                        Duis felis mauris, luctus eget dui eget, suscipit tempus magna. 
-                        Duis quis purus sit amet diam condimentum iaculis. 
-                        Proin varius sapien non erat elementum tincidunt. 
-                        Phasellus aliquam sodales tellus, sit amet aliquet nisi elementum non. 
-                        Nam in vulputate sem, in facilisis erat. Fusce auctor risus vel euismod rhoncus.
-                    </p>
-  </div>
-
-  <aside class="sidebar" >
-        <h3>Recent Posts</h3>
-         <h6>In our carbon lives</h6>
-                    <p>January 19, 2026</p>
-                <div class="recent-post2">
-                    <p>Integer at pharetra metus, non porttitor lorem. 
-                        Pellentesque consectetur lacus at erat maximus fringilla. 
-                        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. 
-                        Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. 
-                        Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. 
-                        Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. 
-                        Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat. 
-                        In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. 
-                        Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. 
-                        Vestibulum eget eros nec eros maximus cursus.
-                    </p>
-                </div>
-        <h6>Travel where you want.</h6>
-                    <p>January 5, 2026</p>
-                <div class="recent-post2">
-                    <p>Integer at pharetra metus, non porttitor lorem. 
-                        Pellentesque consectetur lacus at erat maximus fringilla. 
-                        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. 
-                        Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. 
-                        Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. 
-                        Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. 
-                        Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat. 
-                        In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. 
-                        Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. 
-                        Vestibulum eget eros nec eros maximus cursus.Integer at pharetra metus, non porttitor lorem. 
-                        Pellentesque consectetur lacus at erat maximus fringilla.Integer at pharetra metus, non porttitor lorem.
-                    </p>
-                </div>
-        <h6>Travel where you want.</h6>
-                    <p>January 5, 2026</p>
-                <div class="recent-post2">
-                    <p>Integer at pharetra metus, non porttitor lorem. 
-                        Pellentesque consectetur lacus at erat maximus fringilla. 
-                        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. 
-                        Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. 
-                        Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. 
-                        Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. 
-                        Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat. 
-                        In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. 
-                        Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. 
-                        Vestibulum eget eros nec eros maximus cursus.Integer at pharetra metus, non porttitor lorem. 
-                    </p>
-                </div>
-        
-  </aside>
-
-</div><!-- 分栏结束 -->
-<br>
-<br>
-
-<br>
-<br>
-    <h2 id="portfolio" class="blankspace">PORTFOLIO (POSTER)</h2>
-                    <p class="blankspace">
-                        Since joining the German Channel of the Overseas Communication Department at People's Daily Online, 
-                        I have gradually familiarized myself with the work processes under the careful guidance of my internship supervisor and the channel instructor's. 
-                        I successfully completed several major projects, including the design of posters for the Sino-German economic and trade series, 
-                        the production of a n interview video with Continental Tire China Ltd., the production o f a video for the Swiss Embassy event, 
-                        the creation of German channel short videos for the "I Celebrate Chinese New Year" series, 
-                        the creation of posters for Chinese New Year customs and countdown events, and the design and production of posters to celebrate the Chinese New Year. 
-                        Throughout my three-month internship, I approached each task with dedication and seriousness. 
-                        Under the patient guidance of my mentors, I continuously improved my professional skills. 
-                        Particularly in areas like topic planning, data verification, and video production, 
-                        I learned how to identify more impactful topics from the perspective of foreign media, 
-                        present facts in a rigorous and scientific manner, and inject creativity into the content for foreign public diplomacy.
-                    </p>
-<div class="portfolio">
-  <img src="https://german.people.com.cn/NMediaFile/2024/1231/FOREIGN17356120041045AEODJ4AJ7.png">
-  <img src="https://german.people.com.cn/NMediaFile/2024/1231/FOREIGN17356113625967Z8P79DWHQ.png">
-  <img src="https://german.people.com.cn/NMediaFile/2024/1231/FOREIGN17356113626428ZMXXAHAJN.png">
-  <img src="https://german.people.com.cn/NMediaFile/2024/1231/FOREIGN1735611845190RVNLQTA38V.png">
-</div>
-
-<h2 class="blankspace">PORTFOLIO (PHOTOGRAPH)</h2>
-                    <p class="blankspace">
-                        Integer at pharetra metus, non porttitor lorem. 
-                        Pellentesque consectetur lacus at erat maximus fringilla. 
-                        Mauris suscipit commodo lacus id rutrum. Suspendisse potenti. 
-                        Vestibulum cursus lobortis suscipit. Pellentesque vel eleifend urna. 
-                        Praesent id pellentesque metus. Aenean accumsan ipsum ac consectetur convallis. 
-                        Sed efficitur blandit turpis ut rhoncus. Integer vehicula risus eget purus porttitor gravida. 
-                        Ut dapibus aliquet quam, non tempus elit varius non. Aliquam rutrum molestie ipsum eu feugiat. 
-                        In hac habitasse platea dictumst. Nullam vulputate fringilla nisl, non finibus lorem vulputate non. 
-                        Donec non finibus ex. Curabitur quis elit sit amet nunc finibus volutpat vitae vitae enim. V
-                        estibulum eget eros nec eros maximus cursus.Integer at pharetra metus, non porttitor lorem. 
-                        Pellentesque consectetur lacus at erat maximus fringilla.Integer at pharetra metus, non porttitor lorem.
-                    </p>
-                    <a href="moreworks3.0.html" target="_blank" class="blankspace">What's more</a>
-
-<div class="portfolio">
-  <img src="images/001.JPG" alt="摄影作品1">
-  <img src="images/002.JPG" alt="摄影作品2">
-  <img src="images/003.JPG" alt="摄影作品3">
-  <img src="images/004.JPG" alt="摄影作品4">
-</div>
-
-
-            
-    <h2 class="blankspace">PORTFOLIO (VIDEO)</h2>
-<div class="video-wrapper blankspace">
-  <iframe 
-    src="http://flv4.people.com.cn/videofile7/pvmsvideo/2025/2/12/HaiWaiChuanBoBu-ShengChuYi_06d725ee8ee51e163791c933a76b4a4d.mp4"
-    allowfullscreen>
-  </iframe>
-   <iframe 
-    src="https://v.qq.com/txp/iframe/player.html?vid=f35418onlmu"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
-<br>
-<br>
-<br>
-<br>
-<footer id="colophon" class="site-footer" role="contentinfo">
-
-    <!-- Footer Widgets -->
-    <div class="footer-widgets widget-area container">
-        <div class="row">
-            <div class="blankspace">
-            <!-- About -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <section class="widget widget_text">
-                    <div class="textwidget">
-                        <h1 align="left">HUANG Rui</h1>
-
-                        <p>
-                            Quisque velit urna, blandit eu rhoncus ut, efficitur sit amet justo.
-                            Suspendisse lobortis erat nec massa egestas venenatis nec eu ligula.
-                            Vestibulum condimentum cursus magna. Duis quis purus sit amet diam condimentum iaculis. 
-                            Proin varius sapien non erat elementum tincidunt. 
-                            Phasellus aliquam sodales tellus, sit amet aliquet nisi elementum non. 
-                            Nam in vulputate sem, in facilisis erat. Fusce auctor risus vel euismod rhoncus.
-                            Pellentesque consectetur lacus at erat maximus fringilla.Integer at pharetra metus, non porttitor lorem.
-                        </p>
-
-                        <p>
-                            Proin a rutrum neque. Proin accumsan ipsum quis tellus venenatis dapibus.
-                            Phasellus sit amet mi mauris. Nullam vulputate est ut neque sagittis elementum.
-                            Duis felis mauris, luctus eget dui eget, suscipit tempus magna. 
-                            Duis quis purus sit amet diam condimentum iaculis. 
-                            Proin varius sapien non erat elementum tincidunt. 
-                            Phasellus aliquam sodales tellus, sit amet aliquet nisi elementum non. 
-                            Nam in vulputate sem, in facilisis erat. Fusce auctor risus vel euismod rhoncus.
-                        </p>
-                    </div>
-                </section>
-            </div>
-            
-            <br>
-            <!-- Recent Posts -->
-            <!-- 
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <section class="widget widget_recent_entries">
-                    <h5 class="widget-title">Recent Posts</h5>
-                    <ul>
-                        <li>
-                            <p>Explore new places every single day</p>
-                            <span class="post-date">January 5, 2026</span>
-                        </li>
-                        <li>
-                            <p>Travel where you want.</p>
-                            <span class="post-date">January 10, 2026</span>
-                        </li>
-                        <li>
-                            <p>Explore the world</p>
-                            <span class="post-date">January 15, 2026</span>
-                        </li>
-
-                    </ul>
-                </section>
-            </div>
-            Recent Posts -->
-            <!-- Calendar -->
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <section class="widget widget_calendar">
-                    <h5 class="widget-title">February 2026</h5>
-                    <div class="calendar_wrap">
-                        <table class="wp-calendar-table">
-                            <thead>
-                                <tr>
-                                    <th>M</th>
-                                    <th>T</th>
-                                    <th>W</th>
-                                    <th>T</th>
-                                    <th>F</th>
-                                    <th>S</th>
-                                    <th>S</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td colspan="6"></td><td>1</td></tr>
-                                <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr>
-                                <tr><td>9</td><td>10</td><td>11</td><td class="today">12</td><td>13</td><td>14</td><td>15</td></tr>
-                                <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr>
-                                <tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td></td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            </div>
-
+  <main id="presentation">
+    <section class="chapter chapter--intro" id="intro" data-section data-chapter="1" tabindex="-1" aria-labelledby="intro-title">
+      <div class="hero-grid">
+        <div class="hero-copy chapter-inner">
+          <p class="eyebrow reveal">Get to know me from now</p>
+          <h1 class="display-title reveal" id="intro-title">Hello.</h1>
+          <div class="lead-copy reveal">
+            <p>My name is James.</p>
+            <p>But please don’t get to know me<br>through my history.</p>
+            <p class="accent-line">Get to know me<br>starting from now.</p>
+          </div>
         </div>
-    </div>
+        <figure class="hero-visual" aria-label="A candid photograph of James sharing a warm moment over dinner">
+          <img src="images/IMG_4508.JPG" alt="James smiling during a candid dinner moment">
+        </figure>
+      </div>
+      <button class="scroll-cue" type="button" data-target="labels" aria-label="Continue to Labels">
+        <span>Scroll / press ↓</span>
+        <span class="scroll-arrow" aria-hidden="true">↓</span>
+      </button>
+    </section>
 
-    <!-- Copyright -->
-    <div class="site-info">
-        <div class="container">
-            <div class="row">
-
-                <div class="copyright-info col-md-6 col-sm-12">
-                    <div class="blankspace">
-                    <p align="left">© 2025 HUANG Rui. All rights reserved.</p>
-                </div>
-
-            </div>
+    <section class="chapter chapter--labels" id="labels" data-section data-chapter="2" tabindex="-1" aria-labelledby="labels-title">
+      <div class="chapter-inner chapter-inner--wide labels-layout">
+        <div>
+          <p class="eyebrow reveal">02 — Labels</p>
+          <h2 class="section-title reveal" id="labels-title">I could give you<br>a few labels.</h2>
         </div>
-    </div>
+        <div class="labels-copy">
+          <div class="label-list reveal" aria-label="A few true but incomplete labels">
+            <span>Communication graduate.</span>
+            <span>Former intern.</span>
+            <span>Media planner.</span>
+            <span>Creative person.</span>
+            <span>Data learner.</span>
+          </div>
+          <div class="body-copy reveal">
+            <p>They would all be true.</p>
+            <p>But they would also make it too easy to decide who I am before getting to know me.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</footer>
-</footer>
+    <section class="chapter chapter--names" id="names" data-section data-chapter="3" tabindex="-1" aria-labelledby="names-title">
+      <div class="chapter-inner chapter-inner--wide names-layout">
+        <div class="names-heading">
+          <p class="eyebrow reveal">03 — My names</p>
+          <h2 class="section-title section-title--compact reveal" id="names-title">I have been called<br>many things.</h2>
+        </div>
+        <ol class="name-list">
+          <li class="name-item reveal-name">
+            <span class="given-name" lang="zh-Hans">睿睿</span>
+            <span class="name-context">at home</span>
+          </li>
+          <li class="name-item reveal-name">
+            <span class="given-name">Klaus</span>
+            <span class="name-context">in Beijing</span>
+          </li>
+          <li class="name-item reveal-name">
+            <span class="given-name" lang="zh-Hans">睿哥</span>
+            <span class="name-context">by collaborators</span>
+          </li>
+          <li class="name-item reveal-name">
+            <span class="given-name" lang="zh-Hans">浪茶</span>
+            <span class="name-context">in Hainan—after a sandwich shop I kept returning to</span>
+          </li>
+          <li class="name-item reveal-name">
+            <span class="given-name" lang="zh-Hans">宝宝</span>
+            <span class="name-context">by someone I love</span>
+          </li>
+          <li class="name-item reveal-name">
+            <span class="given-name">James</span>
+            <span class="name-context">in Hong Kong</span>
+          </li>
+        </ol>
+        <div class="names-coda body-copy reveal">
+          <p>Every name belongs to a different place, relationship, and version of me.</p>
+          <p>They are all me.<br><strong>But none is the whole of me.</strong></p>
+        </div>
+      </div>
+    </section>
 
-    </body>
+    <section class="chapter chapter--again" id="begin-again" data-section data-chapter="4" tabindex="-1" aria-labelledby="again-title">
+      <div class="again-orbit" aria-hidden="true"></div>
+      <div class="chapter-inner again-layout">
+        <p class="eyebrow reveal">04 — Begin again</p>
+        <h2 class="section-title reveal" id="again-title">My past matters.</h2>
+        <div class="body-copy body-copy--large reveal">
+          <p>But it does not have to decide<br>what comes next.</p>
+          <p>Sometimes, the widest dream I can have is to stop holding too tightly to a single identity.</p>
+        </div>
+        <p class="again-steps reveal"><span>To clear the ground.</span><strong>To begin again.</strong></p>
+      </div>
+    </section>
 
+    <section class="chapter chapter--language" id="new-language" data-section data-chapter="5" tabindex="-1" aria-labelledby="language-title">
+      <div class="chapter-inner chapter-inner--wide language-layout">
+        <div class="language-copy">
+          <p class="eyebrow reveal">05 — A new language</p>
+          <h2 class="section-title reveal" id="language-title">Right now,<br>I am learning<br>a new language.</h2>
+          <p class="language-not reveal">Not Cantonese, Mandarin,<br>English, or German.</p>
+        </div>
+        <div class="language-evidence">
+          <p class="language-intro reveal">The language of</p>
+          <div class="language-terms" aria-label="Audiences, behaviour, patterns, and evidence">
+            <span class="reveal-name">Audiences</span>
+            <span class="reveal-name">Behaviour</span>
+            <span class="reveal-name">Patterns</span>
+            <span class="reveal-name">Evidence</span>
+          </div>
+          <div class="body-copy reveal">
+            <p>I am learning that an idea can be beautiful—and still need to prove that it works.</p>
+            <p class="accent-line">So I look again, question again,<br>and begin again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--moving" id="keep-moving" data-section data-chapter="6" tabindex="-1" aria-labelledby="moving-title">
+      <div class="moving-grid">
+        <figure class="moving-visual">
+          <img src="images/004.JPG" alt="A blurred figure moving through a quiet blue gallery">
+        </figure>
+        <div class="moving-copy chapter-inner">
+          <p class="eyebrow reveal">06 — Keep moving</p>
+          <h2 class="section-title reveal" id="moving-title">So I will<br>keep dreaming.</h2>
+          <div class="body-copy body-copy--large reveal">
+            <p>Keep moving.</p>
+            <p>Keep my feet on ground<br>that feels like my own.</p>
+          </div>
+          <p class="different-line reveal">And keep trying to make something <em>different</em>—<br>then something <strong>even more different.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--closing" id="from-now" data-section data-chapter="7" tabindex="-1" aria-labelledby="closing-title">
+      <div class="chapter-inner closing-layout">
+        <p class="eyebrow reveal">07 — From now</p>
+        <h2 class="section-title section-title--closing reveal" id="closing-title">This is not the story<br>of who I was.</h2>
+        <div class="closing-copy body-copy reveal">
+          <p>It is an invitation<br>to see who I may become.</p>
+          <p>Thank you for meeting me again.</p>
+          <p>And thank you to myself—for the courage to restart and the curiosity to keep exploring.</p>
+        </div>
+        <div class="closing-signature reveal">
+          <p>My name is James.</p>
+          <p>Please get to know me<br><strong>starting from now.</strong></p>
+        </div>
+        <p class="postscript">P.S. If you still want the traditional version, I may have to ask a terrible question and earn myself another five minutes.</p>
+        <button class="epilogue-cue" type="button" data-target="works">
+          <span>One optional epilogue</span>
+          <span aria-hidden="true">↓</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="works" id="works" data-section tabindex="-1" aria-labelledby="works-title">
+      <div class="works-header">
+        <p class="eyebrow">After the introduction</p>
+        <h2 id="works-title">Some things I have<br>made along the way.</h2>
+        <p>The work is not the whole story. It is simply a trace of where I have looked, what I have noticed, and what I have tried to make visible.</p>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card work-card--editorial">
+          <div class="poster-stack" aria-label="A selection of four People's Daily Online posters">
+            <img src="images/works/peoples-daily-01.png" alt="People's Daily Online editorial poster 1" loading="lazy">
+            <img src="images/works/peoples-daily-02.png" alt="People's Daily Online editorial poster 2" loading="lazy">
+            <img src="images/works/peoples-daily-03.png" alt="People's Daily Online editorial poster 3" loading="lazy">
+            <img src="images/works/peoples-daily-04.png" alt="People's Daily Online editorial poster 4" loading="lazy">
+          </div>
+          <div class="work-card-copy">
+            <p class="work-number">01</p>
+            <h3>People’s Daily Online</h3>
+            <p>Editorial posters shaped for international audiences.</p>
+          </div>
+        </article>
+
+        <article class="work-card work-card--video">
+          <div class="video-pair">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="images/DSCF0714 2.JPG">
+                <source src="http://flv4.people.com.cn/videofile7/pvmsvideo/2025/2/12/HaiWaiChuanBoBu-ShengChuYi_06d725ee8ee51e163791c933a76b4a4d.mp4" type="video/mp4">
+                Your browser does not support video playback.
+              </video>
+            </div>
+            <div class="video-frame video-frame--remote">
+              <iframe
+                data-src="https://v.qq.com/txp/iframe/player.html?vid=f35418onlmu"
+                title="A second video work by James"
+                loading="lazy"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <button class="video-activate" type="button" aria-label="Open the second video and pause the soundtrack">
+                <span class="video-play-symbol" aria-hidden="true">▶</span>
+                <span>Open video</span>
+                <small>Music will pause</small>
+              </button>
+            </div>
+          </div>
+          <div class="work-card-copy">
+            <p class="work-number">02</p>
+            <h3>Moving image</h3>
+            <p>Stories shaped through rhythm, sequence, sound, and the decision of where to let an image breathe.</p>
+          </div>
+        </article>
+
+        <article class="work-card work-card--photography">
+          <div class="photo-stack" aria-label="A selection of James's photographs">
+            <img src="images/001.JPG" alt="Red torii gates in the rain" loading="lazy">
+            <img src="images/009.jpg" alt="Star trails above a dark river" loading="lazy">
+            <img src="images/006.jpg" alt="A silhouetted figure behind orange words" loading="lazy">
+          </div>
+          <div class="work-card-copy">
+            <p class="work-number">03</p>
+            <h3>Photography</h3>
+            <p>Places, movement, quiet details—and the patience to look again.</p>
+            <a class="text-link" href="moreworks3.0_refined.html" target="_blank" rel="noopener">View all 12 photographs <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+
+      <footer class="site-footer">
+        <p>© 2026 James</p>
+        <a href="#intro">Meet me again <span aria-hidden="true">↑</span></a>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.documentElement.classList.add("js");
+
+    const sections = Array.from(document.querySelectorAll("[data-section]"));
+    const chapterSections = sections.filter((section) => section.dataset.chapter);
+    const navigationButtons = Array.from(document.querySelectorAll("[data-target]"));
+    const chapterDots = Array.from(document.querySelectorAll(".chapter-dot"));
+    const currentChapter = document.getElementById("currentChapter");
+    const fullscreenButton = document.getElementById("fullscreenButton");
+    const autoStoryButton = document.getElementById("autoStoryButton");
+    const autoStoryLabel = document.getElementById("autoStoryLabel");
+    const autoStorySymbol = document.getElementById("autoStorySymbol");
+    const soundButton = document.getElementById("soundButton");
+    const soundLabel = document.getElementById("soundLabel");
+    const backgroundMusic = document.getElementById("backgroundMusic");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const targetMusicVolume = 0.5;
+    const autoStoryDurations = [13000, 14000, 20000, 14000, 18000, 13000, 13000];
+
+    let activeSection = sections[0];
+    let musicFadeFrame = null;
+    let autoStoryTimer = null;
+    let autoStoryIndex = 0;
+    let autoStoryIsPlaying = false;
+
+    function goToSection(id) {
+      const target = document.getElementById(id);
+      if (!target) return;
+      target.scrollIntoView({
+        behavior: reducedMotion.matches ? "auto" : "smooth",
+        block: "start"
+      });
+    }
+
+    function setActiveSection(section) {
+      if (!section || activeSection === section && section.classList.contains("is-active")) return;
+      activeSection = section;
+      sections.forEach((item) => item.classList.toggle("is-active", item === section));
+
+      const chapter = section.dataset.chapter;
+      currentChapter.textContent = chapter ? String(chapter).padStart(2, "0") : "••";
+
+      chapterDots.forEach((dot) => {
+        const isCurrent = dot.dataset.target === section.id;
+        dot.classList.toggle("is-current", isCurrent);
+        if (isCurrent) {
+          dot.setAttribute("aria-current", "step");
+        } else {
+          dot.removeAttribute("aria-current");
+        }
+      });
+
+    }
+
+    navigationButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        stopAutoStory();
+        goToSection(button.dataset.target);
+      });
+    });
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) setActiveSection(visible.target);
+    }, {
+      threshold: [0.25, 0.45, 0.6, 0.75]
+    });
+
+    sections.forEach((section) => sectionObserver.observe(section));
+    setActiveSection(sections[0]);
+
+    function isInteractiveTarget(target) {
+      return target.closest("a, button, input, textarea, select, video, [contenteditable='true']");
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (isInteractiveTarget(event.target)) return;
+
+      if (event.key.toLowerCase() === "m") {
+        event.preventDefault();
+        toggleMusic();
+        return;
+      }
+
+      const index = sections.indexOf(activeSection);
+      let destination = null;
+
+      if (["ArrowDown", "PageDown", " "].includes(event.key)) {
+        destination = sections[Math.min(index + 1, sections.length - 1)];
+      } else if (["ArrowUp", "PageUp"].includes(event.key)) {
+        destination = sections[Math.max(index - 1, 0)];
+      } else if (event.key === "Home") {
+        destination = sections[0];
+      } else if (event.key === "End") {
+        destination = sections[sections.length - 1];
+      }
+
+      if (destination) {
+        event.preventDefault();
+        stopAutoStory();
+        goToSection(destination.id);
+      }
+    });
+
+    function updateAutoStoryControl(isPlaying) {
+      autoStoryButton.classList.toggle("is-playing", isPlaying);
+      autoStoryButton.setAttribute("aria-pressed", String(isPlaying));
+      autoStoryButton.setAttribute("aria-label", isPlaying ? "Stop the automatic presentation" : "Start the 1 minute 45 second automatic presentation");
+      autoStoryButton.title = isPlaying ? "Stop automatic presentation" : "Start automatic presentation";
+      autoStorySymbol.textContent = isPlaying ? "■" : "▶";
+      autoStoryLabel.textContent = isPlaying ? "Stop auto" : "Auto 1:45";
+    }
+
+    function stopAutoStory() {
+      if (autoStoryTimer) clearTimeout(autoStoryTimer);
+      autoStoryTimer = null;
+      autoStoryIsPlaying = false;
+      updateAutoStoryControl(false);
+    }
+
+    function scheduleNextAutoChapter() {
+      autoStoryTimer = setTimeout(() => {
+        autoStoryIndex += 1;
+        if (autoStoryIndex < chapterSections.length) {
+          goToSection(chapterSections[autoStoryIndex].id);
+          scheduleNextAutoChapter();
+        } else {
+          goToSection("works");
+          stopAutoStory();
+        }
+      }, autoStoryDurations[autoStoryIndex]);
+    }
+
+    function startAutoStory() {
+      stopAutoStory();
+      autoStoryIsPlaying = true;
+      autoStoryIndex = 0;
+      updateAutoStoryControl(true);
+      goToSection(chapterSections[0].id);
+      scheduleNextAutoChapter();
+    }
+
+    function toggleAutoStory() {
+      if (autoStoryIsPlaying) {
+        stopAutoStory();
+      } else {
+        startAutoStory();
+      }
+    }
+
+    autoStoryButton.addEventListener("click", toggleAutoStory);
+    window.addEventListener("wheel", () => {
+      if (autoStoryIsPlaying) stopAutoStory();
+    }, { passive: true });
+    window.addEventListener("touchstart", () => {
+      if (autoStoryIsPlaying) stopAutoStory();
+    }, { passive: true });
+
+    function updateMusicControl(isPlaying) {
+      soundButton.classList.toggle("is-playing", isPlaying);
+      soundButton.setAttribute("aria-pressed", String(isPlaying));
+      soundButton.setAttribute("aria-label", isPlaying ? "Pause soundtrack: BAANDIT! — Miss" : "Play soundtrack: BAANDIT! — Miss");
+      soundButton.title = isPlaying ? "Pause BAANDIT! — Miss (M)" : "Play BAANDIT! — Miss (M)";
+      soundLabel.textContent = isPlaying ? "Pause music" : "Soundtrack";
+    }
+
+    function fadeMusicTo(target, duration, onComplete) {
+      if (musicFadeFrame) cancelAnimationFrame(musicFadeFrame);
+      const startVolume = backgroundMusic.volume;
+      const difference = target - startVolume;
+      const startTime = performance.now();
+
+      function step(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        backgroundMusic.volume = Math.min(1, Math.max(0, startVolume + difference * eased));
+        if (progress < 1) {
+          musicFadeFrame = requestAnimationFrame(step);
+        } else {
+          musicFadeFrame = null;
+          if (onComplete) onComplete();
+        }
+      }
+
+      musicFadeFrame = requestAnimationFrame(step);
+    }
+
+    async function playMusic() {
+      if (musicFadeFrame) cancelAnimationFrame(musicFadeFrame);
+      backgroundMusic.volume = 0;
+      try {
+        await backgroundMusic.play();
+        updateMusicControl(true);
+        fadeMusicTo(targetMusicVolume, 900);
+      } catch (error) {
+        updateMusicControl(false);
+        soundButton.classList.add("is-unavailable");
+        soundLabel.textContent = "Try again";
+      }
+    }
+
+    function pauseMusic(immediate = false) {
+      if (backgroundMusic.paused) {
+        updateMusicControl(false);
+        return;
+      }
+
+      if (immediate || reducedMotion.matches) {
+        if (musicFadeFrame) cancelAnimationFrame(musicFadeFrame);
+        backgroundMusic.pause();
+        backgroundMusic.volume = targetMusicVolume;
+        updateMusicControl(false);
+        return;
+      }
+
+      fadeMusicTo(0, 500, () => {
+        backgroundMusic.pause();
+        backgroundMusic.volume = targetMusicVolume;
+        updateMusicControl(false);
+      });
+    }
+
+    function toggleMusic() {
+      if (backgroundMusic.paused) {
+        playMusic();
+      } else {
+        pauseMusic(false);
+      }
+    }
+
+    soundButton.addEventListener("click", toggleMusic);
+    backgroundMusic.addEventListener("error", () => {
+      soundButton.classList.add("is-unavailable");
+      soundButton.disabled = true;
+      soundLabel.textContent = "No audio";
+    });
+
+    document.querySelectorAll("video").forEach((video) => {
+      video.addEventListener("play", () => pauseMusic(false));
+    });
+
+    document.querySelectorAll(".video-activate").forEach((button) => {
+      button.addEventListener("click", () => {
+        pauseMusic(false);
+        const frame = button.parentElement.querySelector("iframe");
+        frame.src = frame.dataset.src;
+        button.remove();
+      });
+    });
+
+    function isFullscreen() {
+      return Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+    }
+
+    function updateFullscreenButton() {
+      const active = isFullscreen();
+      fullscreenButton.setAttribute("aria-pressed", String(active));
+      fullscreenButton.setAttribute("aria-label", active ? "Exit full screen" : "Enter full screen");
+    }
+
+    fullscreenButton.addEventListener("click", async () => {
+      try {
+        if (!isFullscreen()) {
+          const request = document.documentElement.requestFullscreen || document.documentElement.webkitRequestFullscreen;
+          if (request) await request.call(document.documentElement);
+        } else {
+          const exit = document.exitFullscreen || document.webkitExitFullscreen;
+          if (exit) await exit.call(document);
+        }
+      } catch (error) {
+        fullscreenButton.classList.add("is-unavailable");
+      }
+      updateFullscreenButton();
+    });
+
+    document.addEventListener("fullscreenchange", updateFullscreenButton);
+    document.addEventListener("webkitfullscreenchange", updateFullscreenButton);
+  </script>
+</body>
 </html>
